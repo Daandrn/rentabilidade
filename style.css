@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+main {
+    display: flex;
+}
+
+div#comparacao fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+div#tabela fieldset {
+    height: 136px;
+}
+
+input#valor {
+    width: 150px;
+}
+
+select#tipo {
+    width: 150px;
+}
+
+input#taxa {
+    width: 150px;
+}
+
+select#isento {
+    margin-bottom: 2px;
+    width: 70px;
+}
+
+input#dias2 {
+    width: 150px;
+}
+
+input#taxa2 {
+    width: 150px;
+}
+
+select#tipo2 {
+    width: 150px;
+}
+
+select#isento2 {
+    margin-bottom: 2px;
+    width: 70px;
+}
+
+input#comparar {
+    position: relative;
+    margin: 2px 40px 2px;
+    width: 70px;
+}
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+}
