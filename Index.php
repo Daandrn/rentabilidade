@@ -71,48 +71,51 @@
                     if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == "POST") {
                         
                         $titulo1 = $_POST['tipo'];
-                        if($titulo1 == 1 || $titulo1 == 2) {
-                            $isento1 = boolval('f');
+                        if($titulo1 == "1" || $titulo1 == "2") {
+                            $isento1 = false;
                         } else {
-                            $isento1 = boolval('t');
+                            $isento1 = true;
                         }
 
                         $titulo2 = $_POST['tipo2'];
-                        if($titulo1 == 1 || $titulo1 == 2) {
-                            $isento2 = boolval('f');
+                        if($titulo2 == "1" || $titulo2 == "2") {
+                            $isento2 = false;
                         } else {
-                            $isento2 = boolval('t');
+                            $isento2 = true;
                         }
                         
+                        var_dump($isento1);
+                        var_dump($isento2);
+
                         $taxa1 = $_POST['taxa'];
                         $taxa2 = $_POST['taxa2'];
 
                         $dias1 = $_POST['dias'];
-                        if($dias1 == "1" && $isento1 == 'f') {
+                        if($dias1 == "1" && $isento1 == false) {
                             $dias1 = 22.5;
                             $taxa1 = $taxa1 - ($taxa1 * ($dias1 / 100));
-                        } elseif($dias1 == "2" && $isento1 == 'f') {
+                        } elseif($dias1 == "2" && $isento1 == false) {
                             $dias1 = 20;
                             $taxa1 = $taxa1 - ($taxa1 * ($dias1 / 100));
-                        } elseif($dias1 == "3" && $isento1 == 'f') {
+                        } elseif($dias1 == "3" && $isento1 == false) {
                             $dias1 = 17.5;
                             $taxa1 = $taxa1 - ($taxa1 * ($dias1 / 100));
-                        } elseif($dias1 == "4" && $isento1 == 'f') {
+                        } elseif($dias1 == "4" && $isento1 == false) {
                             $dias1 = 15;
                             $taxa1 = $taxa1 - ($taxa1 * ($dias1 / 100));
                         }
 
                         $dias2 = $_POST['dias2'];
-                        if($dias2 == "1" && $isento2 == 'f') {
+                        if($dias2 == "1" && $isento2 == false) {
                             $dias2 = 22.5;
                             $taxa2 = $taxa2 - ($taxa2 * ($dias2 / 100));
-                        } elseif($dias2 == "2" && $isento2 == 'f') {
+                        } elseif($dias2 == "2" && $isento2 == false) {
                             $dias2 = 20;
                             $taxa2 = $taxa2 - ($taxa2 * ($dias2 / 100));
-                        } elseif($dias2 == "3" && $isento2 == 'f') {
+                        } elseif($dias2 == "3" && $isento2 == false) {
                             $dias2 = 17.5;
                             $taxa2 = $taxa2 - ($taxa2 * ($dias2 / 100));
-                        } elseif($dias2 == "4" && $isento2 == 'f') {
+                        } elseif($dias2 == "4" && $isento2 == false) {
                             $dias2 = 15;
                             $taxa2 = $taxa2 - ($taxa2 * ($dias2 / 100));
                         }
