@@ -83,9 +83,6 @@
                         } else {
                             $isento2 = true;
                         }
-                        
-                        var_dump($isento1);
-                        var_dump($isento2);
 
                         $taxa1 = $_POST['taxa'];
                         $taxa2 = $_POST['taxa2'];
