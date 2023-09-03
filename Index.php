@@ -73,14 +73,16 @@
                         $titulo1 = $_POST['tipo'];
                         if($titulo1 == "1" || $titulo1 == "2") {
                             $isento1 = false;
-                        } else {
+                        } 
+                        if($titulo1 == "3" || $titulo1 == "4") {
                             $isento1 = true;
                         }
 
                         $titulo2 = $_POST['tipo2'];
                         if($titulo2 == "1" || $titulo2 == "2") {
                             $isento2 = false;
-                        } else {
+                        } 
+                        if($titulo2 == "3" || $titulo2 == "4") {
                             $isento2 = true;
                         }
 
