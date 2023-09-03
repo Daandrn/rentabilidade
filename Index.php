@@ -127,21 +127,21 @@
                             echo "<label for=\"val2\"></label>Taxa real do segundo</label>
                                  <input type=\"text\" name=\"val2\" value=".$taxaReal2." readonly>";
                         }
-                        elseif ($taxaReal1 > $taxaReal2) {
+                        if ($taxaReal1 > $taxaReal2) {
                             echo "<textarea rows=\"2\" cols=\"30\" readonly>O primeiro titulo rende mais que o segundo!</textarea>";
                             echo "<label for=\"val1\">Taxa real do primeiro</label>
                                  <input type=\"text\" name=\"val1\" value=".$taxaReal1." readonly>";
                             echo "<label for=\"val2\">Taxa real do segundo</label>
                                  <input type=\"text\" name=\"val2\" value=".$taxaReal2." readonly>";
                         }
-                        elseif ($taxaReal2 > $taxaReal1) {
+                        if ($taxaReal2 > $taxaReal1) {
                             echo "<textarea rows=\"2\" cols=\"30\" readonly>O segundo titulo rende mais que o primeiro!</textarea>";
                             echo "<label for=\"val1\">Taxa real do primeiro</label>
                                  <input type=\"text\" name=\"val1\" value=".$taxaReal1." readonly>";
                             echo "<label for=\"val2\">Taxa real do segundo</label>
                                  <input type=\"text\" name=\"val2\" value=".$taxaReal2." readonly>";
                         }
-                        elseif ($taxaReal1 == $taxaReal2) {
+                        if ($taxaReal1 == $taxaReal2) {
                             echo "<textarea rows=\"2\" cols=\"30\" readonly>Os titulos rendem igualmente!</textarea>";
                             echo "<label for=\"val1\">Taxa real do primeiro</label>
                                  <input type=\"text\" name=\"val1\" value=".$taxaReal1." readonly>";
