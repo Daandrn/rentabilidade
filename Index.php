@@ -12,7 +12,7 @@
     </header>
     <main id="principal">
         <div id="comparacao">
-            <form name="form" action="<? echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <form name="form" action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST">
                 <Fieldset><legend>Primeiro titulo</legend>
                     <label for="tipo">Tipo de titulo</label>
                     <select name="tipo" id="tipo" required>
@@ -60,10 +60,10 @@
         <div id="tabela">
             <fieldset><legend>Tabela de IR</legend>
                 <ul>
-                    <li>até 180 dias: 22,5%</li>
-                    <li>de 181 a 360 dias: 20%</li>
-                    <li>de 361 a 720 dias: 17,5%</li>
-                    <li>acima de 720 dias: 15%</li>
+                    <li>Até 180 dias: 22,5%</li>
+                    <li>De 181 a 360 dias: 20%</li>
+                    <li>De 361 a 720 dias: 17,5%</li>
+                    <li>Acima de 720 dias: 15%</li>
                 </ul>
             </fieldset>
             <fieldset id="resultado"><legend>Resultado</legend>
