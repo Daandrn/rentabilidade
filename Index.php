@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Calculo de rentabilidade</h1>
+        <h1>Calculo de Rentabilidade</h1>
     </header>
     <main id="principal">
         <div id="comparacao">
