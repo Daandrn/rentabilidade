@@ -13,10 +13,11 @@ main {
 div#comparacao fieldset {
     display: flex;
     flex-direction: column;
+    height: 150px;
 }
 
 div#tabela fieldset {
-    height: 136px;
+    height: 150px;
 }
 
 input#valor {
